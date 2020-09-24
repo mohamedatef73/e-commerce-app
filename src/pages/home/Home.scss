@@ -1,30 +1,131 @@
-.home {
-    background-color: rgb(44, 43, 43);
-    height: 100vh;
+$primary-color: #272727;
+$secondary-color: #ff652f;
+
+
+// @mixin media-lg {
+//     @media screen and (min-width: 1024px) {
+//         @content;
+//     }
+// }
+// @mixin media-md {
+//     @media screen and (max-width: 768px) {
+//         @content;
+//     }
+// }
+
+// @include media-md {
+//     .nav {
+//         flex-direction: column;
+//     }
+// };
+
+// @include media-lg() {
+
+//     .nav{
+//         flex-direction: row;
+
+//     }
+// }
+
+
+.header{
     width: 100vw;
+    height: 100vh;
+    background: 
+    linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url(../images/shoe-2.png) ;
+    background-size: cover;
+    overflow: hidden;
+};
+
+.navbar-brand  {
+    width: 35%;
+    margin-left: 30px;
+    opacity: 0;
+    animation: logo 1.5s ease-in-out forwards;
+    animation-delay: 4.5s;
 }
 
-.row {
-    background-color: royalblue;
-    padding-top: 10px;
-}
-.nav {
-    justify-content: center;
-    margin: auto ;
+@keyframes logo {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
 
-}
-.pic {
-    border: 1px solid #fff;
-    margin-bottom: 5px;
-    text-align: center;
-    img {
-        text-align: center;
+    40%,
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
-.item {
-    border: 1px solid #fff;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    text-align: center;
+
+nav ul li {
+    position: relative;
+    transition: .5s;
+    margin: 10px;
+    opacity: 0;
+    animation: nav 1.5s ease-in-out forwards;
 }
+
+nav ul li:nth-child(1) {
+    animation-delay: 4.5s;
+}
+
+nav ul li:nth-child(2) {
+    animation-delay: 4.7s;
+}
+
+nav ul li:nth-child(3) {
+    animation-delay: 4.9s;
+}
+
+nav ul li:nth-child(4) {
+    animation-delay: 5.1s;
+}
+
+@keyframes nav {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    40%,
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+nav ul li:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: .5s;
+    background-color: rgb(252, 163, 61);
+}
+
+nav ul li:hover:before {
+    width: 60%;
+}
+
+
+
+
+
+
 

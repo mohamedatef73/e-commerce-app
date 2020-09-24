@@ -1,0 +1,133 @@
+.header {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../images/shoe-2.png);
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../images/shoe-2.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.navbar-brand {
+  width: 35%;
+  margin-left: 30px;
+  opacity: 0;
+  -webkit-animation: logo 1.5s ease-in-out forwards;
+          animation: logo 1.5s ease-in-out forwards;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  40%,
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  40%,
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+nav ul li {
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin: 10px;
+  opacity: 0;
+  -webkit-animation: nav 1.5s ease-in-out forwards;
+          animation: nav 1.5s ease-in-out forwards;
+}
+
+nav ul li:nth-child(1) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+nav ul li:nth-child(2) {
+  -webkit-animation-delay: 4.7s;
+          animation-delay: 4.7s;
+}
+
+nav ul li:nth-child(3) {
+  -webkit-animation-delay: 4.9s;
+          animation-delay: 4.9s;
+}
+
+nav ul li:nth-child(4) {
+  -webkit-animation-delay: 5.1s;
+          animation-delay: 5.1s;
+}
+
+@-webkit-keyframes nav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  40%,
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes nav {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  40%,
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+nav ul li:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #fca33d;
+}
+
+nav ul li:hover:before {
+  width: 60%;
+}
+/*# sourceMappingURL=Home.css.map */

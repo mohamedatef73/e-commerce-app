@@ -16,7 +16,7 @@ function Home() {
 
 
 
-                <button className="navbar-toggler" type="button" data-toggle="collapse"
+                <button className="btn btn-success navbar-toggler "  data-toggle="collapse"
                     data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
                     aria-expanded="false" aria-label="Toggle navigation">
 

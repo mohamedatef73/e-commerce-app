@@ -1,3 +1,28 @@
+@media screen and (max-width: 768px) {
+  nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  ul {
+    text-align: center;
+  }
+  ul li {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav ul li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 .header {
   width: 100vw;
   height: 100vh;
@@ -44,8 +69,8 @@
 
 nav ul li {
   position: relative;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   margin: 10px;
   opacity: 0;
   -webkit-animation: nav 1s ease-in-out forwards;
@@ -81,14 +106,14 @@ nav ul li {
 }
 
 nav ul li:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 1px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: #f7351b;
 }
 
@@ -102,5 +127,6 @@ img {
 
 .dropdown:hover > .dropdown-menu {
   display: block;
+  text-align: center;
 }
 /*# sourceMappingURL=Home.css.map */

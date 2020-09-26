@@ -1,21 +1,25 @@
 import React from "react"
-import './ContactUs.scss'
+import './ProductsCategories.scss'
 import { Link } from 'react-router-dom'
 import icon from '../images/icon.png'
 
 
 
 
-function ContactUs() {
+
+function Shoes() {
     return (
-        <div className='contact'>
+        <div className='shoes'>
             <Link to='/' className="navbar-brand float-left" >
 
                 <img src={icon} alt='store icon' /> </Link>
 
-            <h1>Contact Us</h1>
+
+
+
+            <h1>Shoes</h1>
         </div>
     )
 }
 
-export default ContactUs
+export default Shoes

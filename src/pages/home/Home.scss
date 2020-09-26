@@ -33,9 +33,9 @@ $secondary-color: #ff652f;
     height: 100vh;
     background: 
     linear-gradient(
-      to right,
-      rgba($primary-color, 0.9),
-      rgba($primary-color, 0.3)
+      to bottom,
+      rgba($primary-color, 0.8),
+      rgba($primary-color, 0.1)
     ),
     url(../images/shoe-2.png) ;
     background-size: cover;
@@ -43,24 +43,17 @@ $secondary-color: #ff652f;
 };
 
 .navbar-brand  {
-    width: 35%;
     margin-left: 30px;
     opacity: 0;
-    animation: logo 1.5s ease-in-out forwards;
-    animation-delay: 4.5s;
+    animation: logo 1s ease-in-out forwards;
+    animation-delay: 1s;
 }
 
 @keyframes logo {
     0% {
-        opacity: 0;
+        opacity: 1;
         transform: translateX(-50px);
     }
-
-    40%,
-    60% {
-        opacity: 0;
-    }
-
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -72,34 +65,16 @@ nav ul li {
     transition: .5s;
     margin: 10px;
     opacity: 0;
-    animation: nav 1.5s ease-in-out forwards;
+    animation: nav 1s ease-in-out forwards;
+    font-weight: 400;
+    font-size: large;
 }
 
-nav ul li:nth-child(1) {
-    animation-delay: 4.5s;
-}
-
-nav ul li:nth-child(2) {
-    animation-delay: 4.7s;
-}
-
-nav ul li:nth-child(3) {
-    animation-delay: 4.9s;
-}
-
-nav ul li:nth-child(4) {
-    animation-delay: 5.1s;
-}
 
 @keyframes nav {
     0% {
         opacity: 0;
-        transform: translateX(100px);
-    }
-
-    40%,
-    60% {
-        opacity: 0;
+        transform: translateX(500px);
     }
 
     100% {
@@ -116,15 +91,21 @@ nav ul li:before {
     width: 0;
     height: 1px;
     transition: .5s;
-    background-color: rgb(252, 163, 61);
+    background-color: rgb(247, 53, 27);
 }
 
 nav ul li:hover:before {
-    width: 60%;
+    width: 90%;
+}
+
+img {
+    width: 60px;
 }
 
 
-
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
 
 
 

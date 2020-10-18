@@ -1,6 +1,5 @@
 $primary-color: #272727;
 $secondary-color: #ff652f;
-
 .cart{
     width: 100vw;
     height: 100vh;
@@ -10,11 +9,10 @@ $secondary-color: #ff652f;
       rgba($primary-color, 0.8),
       rgba($primary-color, 0.1)
     ),
-    url(../images/cart.png) ;
+    url(../images/cv.jpg) ;
     background-size: cover;
-    overflow: hidden;
+    // overflow: hidden;
     text-align: center;
     color: $secondary-color;
-
 
 }
